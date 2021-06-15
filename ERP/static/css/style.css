@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+	background: #131313;
+	padding: 1rem 8rem;
+	z-index: 1000;
+}
+
+.navbar .logo{
+	width: 100px;
+	height: auto;
+}
+
+.navbar .navbar-brand{
+	font-size: 1.4rem;
+	font-weight: 800;
+}
+
+#navbarSupportedContent > ul > li:nth-child(n) > a{
+	color: #fff;
+	font-size: 1.1rem;
+	padding: 0 2.2rem;
+}
+
+#navbarSupportedContent > ul > li:nth-child(n) > a:hover{
+	color: #00BF85;
+}
+
+#navbarSupportedContent > a{
+	background: #00BF85;
+	font-weight: 600;
+	padding: 0.4rem 1.4rem;
+	border-radius: 30px;
+	text-decoration: none;
+}
+
+
+
+.mid{
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+}
+
+.mid video{
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	object-fit: cover;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.hero{
+	position: relative;
+}
+
+.mid .hero p{
+	width: 55%;
+	font-size: 1.1rem;
+	letter-spacing: 0.2px;
+	font-weight: 400;
+	padding-bottom: 1.1rem;
+}
+
+.mid .hero a{
+	background: #00BF85;
+	font-weight: 600;
+	padding: 0.4rem 1.4rem;
+	border-radius: 30px;
+	text-decoration: none;
+}
+
+.teamwork{
+	background-color: #000; 
+}
+
+.teamwork .text{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin: auto;
+}
+
+.teamwork .text h6{
+	color: #00BF7F;
+	font-weight: 800;
+	font-size: 1rem;
+	letter-spacing: 2px;
+}
+
+.teamwork .text h2{
+	color: #F7F5F4;
+	font-weight: 700;
+	font-size: 2.7rem;
+
+}
+
+.teamwork .text p{
+	color: #F7F5F4;
+	font-weight: 400;
+	font-size: 1.1rem;
+	letter-spacing: 0.5px;
+}
+
+.accountability{
+
+}
+
+.accountability .text{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin: auto;
+}
+
+.accountability .text h6{
+	color: #00BF7F;
+	font-weight: 800;
+	font-size: 1rem;
+	letter-spacing: 2px;
+}
+
+.accountability .text h2{
+	color: #111;
+	font-weight: 700;
+	font-size: 2.7rem;
+
+}
+
+.accountability .text p{
+	font-weight: 400;
+	font-size: 1.1rem;
+	letter-spacing: 0.5px;
+}
+
+body > footer {
+	background: #111!important;
+}
+
+/*Login Page*/
+.login-form{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+}
+
+.login-form button{
+	background-color: black;
+}
+
+.login-form h1{
+	font-weight: 600;
+}
+
+
+/* Flashed Messages */
+.flashed_messages{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  
+  border-radius: 10px;
+  z-index: 2
+}

@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block title %}
+Sales Dashboard
+{% endblock %}
+
+<!--Beginning of authentication if statement-->
+{% if current_user.is_authenticated %}
+
+  <!-- Sales Team Dashboard -->
+
+{% block navbar %}
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        
+  <img class="logo img-fluid" src="{{url_for('static', filename='css/img/logo.png')}}">
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Prospects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">On POC</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Closed</a>
+      </li>
+    </ul>
+    <a class="btn btn-success text-dark" href="{{url_for('logout_page')}}" role="button">Logout</a>
+  </div>
+</nav>
+
+{% endblock %}
+
+
+
+<!--If user is not authenticated-->
+
+{% else %}
+
+
+{% endif %}
+<!--End of authentication if statement-->
+

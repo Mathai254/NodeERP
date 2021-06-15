@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% block title %}
+Node ERP
+{% endblock %}
+
+{% block navbar %}
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      
+      <img class="logo img-fluid" src="{{url_for('static', filename='css/img/logo.png')}}">
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Core Values</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Mission</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Vision</a>
+          </li>
+        </ul>
+        <a class="btn btn-success text-dark" href="{{url_for('login_page')}}" role="button">Login</a>
+      </div>
+    </nav>
+
+{% endblock %}
+
+{% block header %}
+
+  <video autoplay muted loop>
+    <source class="embed-responsive" src="{{url_for('static', filename='css/videos/nodes.mp4')}}" type="video/mp4">
+  </video>
+  <div class="hero text-center">
+    <h2 class="text-light display-4 font-weight-bold">Natives ERP</h2>
+    <p class="text-light mx-auto">Please ensure that you have the required access credentials to access your team portal. Contact your Team Lead for more information. </p>
+  </div>
+
+{% endblock %}
+
+{% block content %}
+
+  <section class="teamwork py-5">
+    <div class="row align-items-center container my-5 mx-auto">
+      <div class="text col-lg-6 col-md-6 col-12 w-50">
+        <h6>Teamwork</h6>
+        <h2>Together we can do much</h2>
+        <p>Teamwork is the ability to work together toward a common vision. The ability to direct individual accomplishments toward organizational objectives. It is the fuel that allows common people to attain uncommon results.</p>
+      </div>
+      <div class="img col-lg-6 col-md-6 col-12 w-50">
+        <img class="img-fluid" src="{{url_for('static', filename='css/img/teamwork.jpg')}}">
+      </div>
+    </div>
+  </section>
+
+
+  <section class="accountability py-5">
+    <div class="row align-items-center container my-5 mx-auto">
+      <div class="img col-lg-6 col-md-6 col-12 w-50">
+        <img class="img-fluid" src="{{url_for('static', filename='css/img/teamwork.jpg')}}">
+      </div>      
+
+      <div class="text col-lg-6 col-md-6 col-12 w-50">
+        <h6>Accountability</h6>
+        <h2>Make no excuses</h2>
+        <p>Leaders inspire accountability through their ability to accept responsibility before they place blame. It is not only what we do, but also what we do not do, for which we are accountable.</p>
+      </div>
+
+    </div>
+  </section>
+
+
+{% endblock %}
